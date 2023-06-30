@@ -1,4 +1,4 @@
-from ctypes import *
+from ctypes import windll, byref, create_string_buffer, GetLastError, Structure, sizeof, POINTER
 from ctypes.wintypes import HWND, LPCSTR, UINT, INT, LPSTR, LPDWORD, DWORD, HANDLE, BOOL
 
 MessageBoxA = windll.user32.MessageBoxA # MessageBoxA is a function pointer
